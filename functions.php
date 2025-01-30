@@ -31,11 +31,31 @@ function topslot_scripts() {
 	wp_enqueue_script(
 		'slot-function',
 		get_template_directory_uri() . '/assets/js/slot-function.js', 
-		array(), 
+		array('jquery'), 
 		null, 
 		true 
 		);
 }
 add_action('wp_enqueue_scripts', 'topslot_scripts');
+
+
+function slot_machine_shortcode() {
+    ob_start(); 
+    ?>
+    <div id="slot-machine">
+        <div class="reels">
+            <div class="single-reel">🍒</div>
+            <div class="single-reel">🍒</div>
+            <div class="single-reel">🍒</div>
+            <button id="spin-button">Spin</button>
+        </div>
+     
+        <p id="result"></p>
+    </div>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode('slot_machine', 'slot_machine_shortcode');
+
 
 

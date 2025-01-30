@@ -15,3 +15,30 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .page-content {
     background-color: green;
 }
+
+.slot-machine {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.reels {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.single-reel {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+#spin-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

@@ -14,7 +14,7 @@ get_header(); // Include the header
        <h2>try our top slot free to use!</h2>
     </div>
         <?php
-            get_template_part("template-parts/slot");
+          the_content();
         ?>
         <div>
         <?php
