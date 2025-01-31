@@ -42,15 +42,27 @@ add_action('wp_enqueue_scripts', 'topslot_scripts');
 function slot_machine_shortcode() {
     ob_start(); 
     ?>
+ 
     <div id="slot-machine">
+        <div class="lights">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
         <div class="reels">
             <div class="single-reel">🍒</div>
             <div class="single-reel">🍒</div>
             <div class="single-reel">🍒</div>
-            <button id="spin-button">Spin</button>
         </div>
+        <button id="spin-button">Spin</button>
+        <div class="lever"></div>
      
         <p id="result"></p>
+    </div>
+    <div class="balance-container">
+        <h2 id="balance">Balance: 100 credits</h2>
+        <a href="/">ADD MORE</a>
     </div>
     <?php
     return ob_get_clean();

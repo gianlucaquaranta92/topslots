@@ -9,8 +9,8 @@ get_header(); // Include the header
 ?>
 
 <div class="page-content">
-    <h1><?php the_title(); ?></h1>
-    <div class="page-body">
+  
+    <div>
        <h2>try our top slot free to use!</h2>
     </div>
         <?php

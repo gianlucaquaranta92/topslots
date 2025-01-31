@@ -1,12 +1,15 @@
-<section>
-    <h1>test</h1>
+
+
+
+<section class="latest-posts">
+    <h1>Our recent reviews of the best online casinos</h1>
     <div>
 
             <?php
         // Custom query to get the latest posts
         $args = array(
             'post_type'      => 'post',      
-            'posts_per_page' => -1,           
+            'posts_per_page' => 5,           
             'orderby'        => 'date',      
             'order'          => 'DESC',   
         );
@@ -15,18 +18,18 @@
 
 
         if ( $latest_posts->have_posts() ) :
-            echo '<ul>'; 
+            echo '<div class="posts-container">'; 
 
-            // Loop through posts
+            // Loop through the posts
             while ( $latest_posts->have_posts() ) : $latest_posts->the_post();
                 ?>
-                <li>
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                </li>
+                
+                    <a class="single-post" href="#"><?php the_title(); ?></a>
+                
                 <?php
             endwhile;
 
-            echo '</ul>'; 
+            echo '</div>'; 
             wp_reset_postdata();
         else :
             echo '<p>No posts found.</p>'; 

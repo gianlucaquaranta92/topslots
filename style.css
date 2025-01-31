@@ -12,33 +12,181 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 */
 
 
-.page-content {
-    background-color: green;
+body {
+    background-color: rgb(123, 185, 123);
+    text-align: center;
+}
+.posts-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+.single-post {
+    height: 100px;
+    width: 20%;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition-duration: .3s;
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+}}
+ul{
+    list-style: none;
 }
 
-.slot-machine {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 20px;
+
+#result {
+    font-weight: bold;
+    color: yellow;
+    font-size: 1.5rem;
 }
+
+
+
+/* Latest posts style */
+
+.latest-posts {
+    margin-top: 4rem;
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* slot machine style*/
+
+#slot-machine {
+    margin: 4rem  auto;
+    width: 300px;
+    height: 250px;
+    background: #a00;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 8px 0px #800, 0px 15px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lights {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.light {
+    width: 15px;
+    height: 15px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px yellow;
+}
+
+
 .reels {
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-.single-reel {
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    border: 2px solid black;
-    text-align: center;
-    line-height: 60px;
-    font-size: 2rem;
-    border-radius: 5px;
-}
-#spin-button {
-    margin-top: 20px;
+    background: #222;
     padding: 10px;
-    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.single-reel {
+    width: 50px;
+    height: 70px;
+    background: white;
+    margin: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#spin-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #0f0, #090);
+    border: none;
+    border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0px 5px 0px #070, 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#spin-button:active {
+    box-shadow: 0px 2px 0px #070;
+    transform: translateY(3px);
+}
+
+
+.balance-container {
+    margin-top: 2rem;
+
+    #balance {
+        background: white;
+        padding: 1rem;
+        border-radius: 4px;
+        max-width: max-content;
+        margin: 0 auto;
+        border: black solid 5px;
+    }
+
+    a {
+        margin: 20px 0 ;
+        background: #2bd65f; 
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Press Start 2P', cursive; 
+        padding: 12px 30px;
+        border: 4px solid #00880b; 
+        border-radius: 10%;
+        text-transform: uppercase;
+        cursor: pointer;
+        outline: none;
+        box-shadow: inset 0px -4px 0px #00880b; 
+        transition: all 0.1s ease-in-out;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        &:active {
+            box-shadow: inset 0px 4px 0px #00880b; 
+            transform: translateY(2px); 
+        }
+    }
+}
+
+.lever {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 20px;
+    height: 50px;
+    background: black;
+    border-radius: 10px;
+}
+
+.lever::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    top: -10px;
+    left: 0;
 }
