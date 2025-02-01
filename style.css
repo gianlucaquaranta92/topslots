@@ -49,6 +49,10 @@ ul{
     font-size: 1.5rem;
 }
 
+p {
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
 
 /* Latest posts style */
