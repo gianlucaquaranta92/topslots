@@ -62,7 +62,7 @@ function slot_machine_shortcode() {
     </div>
     <div class="balance-container">
         <h2 id="balance">Balance: 100 credits</h2>
-        <a href="/">ADD MORE</a>
+        <button id="add-balance">ADD MORE</button>
     </div>
     <?php
     return ob_get_clean();

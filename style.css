@@ -145,7 +145,7 @@ ul{
         border: black solid 5px;
     }
 
-    a {
+    #add-balance {
         margin: 20px 0 ;
         background: #2bd65f; 
         color: #fff;

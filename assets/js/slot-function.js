@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const reels = document.querySelectorAll(".single-reel");
     const resultText = document.getElementById("result");
     const balanceText = document.getElementById("balance");
+    const addBalanceButton = document.getElementById("add-balance");
 
     const symbols = ["🍒", "🍋", "🍊", "🍉", "⭐", "💰"];
     const spinCost = 5;
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function spinReels() {
         if (balance < spinCost) {
-            resultText.textContent = "Not enough credits! Refresh for more.";
+            resultText.textContent = "Not enough credits! Add more.";
             return;
         }
 
@@ -40,6 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
         balanceText.textContent = `Balance: ${balance} credits`;
     }
 
+    function addMoreBalance() {
+        balance += 50; 
+        updateBalanceDisplay();
+    }
+
+ 
+    addBalanceButton.addEventListener("click", addMoreBalance); 
+
     spinButton.addEventListener("click", spinReels);
 });
-
