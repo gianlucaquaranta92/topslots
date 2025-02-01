@@ -13,7 +13,8 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
 
 body {
-    background-color: rgb(123, 185, 123);
+   /* background-color: rgb(123, 185, 123);*/
+    background-color: rgb(175 227 175);
     text-align: center;
 }
 
@@ -70,6 +71,15 @@ p {
 }
 
 /* slot machine style*/
+
+.slot-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 900px;
+}
 
 #slot-machine {
     margin: 4rem  auto;
