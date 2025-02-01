@@ -16,6 +16,10 @@ body {
     background-color: rgb(123, 185, 123);
     text-align: center;
 }
+
+footer {
+    margin-top: 2rem;
+}
 .posts-container {
     display: flex;
     justify-content: space-around;
