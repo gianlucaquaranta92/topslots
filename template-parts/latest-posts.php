@@ -2,7 +2,7 @@
 
 
 <section class="latest-posts">
-    <h1>Our recent reviews of the best online casinos</h1>
+    <h2>1. Our recent reviews of the best online casinos</h2>
     <div>
 
             <?php
