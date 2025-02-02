@@ -12,12 +12,13 @@ get_header(); // Include the header
 <?php
     get_template_part("template-parts/latest-posts");
         ?>
-    <div>
-       <h2>2.Try our top slot free to use!</h2>
-    </div>
+
     <?php
         the_content();
     ?>
+<?php
+    get_template_part("template-parts/answers");
+        ?>
 
 </div>
 

@@ -2,6 +2,7 @@
 
 
 <section class="latest-posts">
+    <div class="page-width">
     <h2>1. Our recent reviews of the best online casinos</h2>
     <div>
 
@@ -36,5 +37,6 @@
         endif;
         ?>
 
+    </div>
     </div>
 </section>

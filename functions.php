@@ -42,29 +42,46 @@ add_action('wp_enqueue_scripts', 'topslot_scripts');
 function slot_machine_shortcode() {
     ob_start(); 
     ?>
-    <div class="slot-container">
-        <div id="slot-machine">
-            <div class="lights">
-                <div class="light"></div>
-                <div class="light"></div>
-                <div class="light"></div>
-                <div class="light"></div>
+    <section class="slot-section">
+        <div class="page-width">
+            <h2>2.Try our top slot free to use!
+            </h2>
+            <div class="slot-container">
+                <div id="slot-machine">
+                    <div class="lights">
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                    </div>
+                    <div class="reels">
+                        <div class="single-reel">🍒</div>
+                        <div class="single-reel">🍒</div>
+                        <div class="single-reel">🍒</div>
+                    </div>
+                    <button id="spin-button">Spin</button>
+                    <div class="lever"></div>
+                
+                    <p id="result"></p>
+                </div>
+                <div class="balance-container">
+                <div id="balance">Balance: 100 credits</div>
+                <div id="add-balance">ADD MORE</div>
             </div>
-            <div class="reels">
-                <div class="single-reel">🍒</div>
-                <div class="single-reel">🍒</div>
-                <div class="single-reel">🍒</div>
             </div>
-            <button id="spin-button">Spin</button>
-            <div class="lever"></div>
-        
-            <p id="result"></p>
+       <p>To make the slot work inside WordPress, I created a shortcode that can be used on any page.
+         It is currently saved in the functions.php. <br>However, in the case of multiple themes being used, I would have created a plugin instead.
+        I kept it quite simple, and of course, there are infinite things I could have added.
+        For example:</p>
+        <ul>
+            <li>A pop-up when there is a winning spin.</li>
+            <li>Prizes are based on the combinations.</li>
+            <li>Multiple lines of reels, along with deeper logic for the combinations, animations, etc.</li>
+        </ul>
+
         </div>
-        <div class="balance-container">
-            <h2 id="balance">Balance: 100 credits</h2>
-            <p id="add-balance">ADD MORE</p>
-        </div>
-    </div>
+    
+    </section>
     <?php
     return ob_get_clean();
 }
