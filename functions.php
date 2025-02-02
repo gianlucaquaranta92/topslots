@@ -75,7 +75,7 @@ function slot_machine_shortcode() {
         For example:</p>
         <ul>
             <li>A pop-up when there is a winning spin.</li>
-            <li>Prizes are based on the combinations.</li>
+            <li>Having prizes based on different combinations.</li>
             <li>Multiple lines of reels, along with deeper logic for the combinations, animations, etc.</li>
         </ul>
 
