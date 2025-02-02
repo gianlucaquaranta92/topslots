@@ -24,11 +24,14 @@ header {
 }
 
 footer {
-    margin-top: 2rem;
+    background-color: black;
+    padding: 4rem;
+    color: white;
+    text-align: center;
 }
 
 section {
-padding: 4rem;
+    padding: 4rem;
     .page-width {
         margin: 0 auto;
         max-width: 900px;
